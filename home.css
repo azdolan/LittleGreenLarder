@@ -36,3 +36,7 @@ nav li a:hover {
   left:50%;
   transform: translateX(-50%);
 }
+
+.carousel-inner img {
+  margin:auto;
+}
