@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>Map to show places in Dundee that promote a Green Lifestyle</title>
     <script src= 'https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <h1> Map</h1>
-    <div id='map' style='width: 400px; height: 300px;'></div>
+    <div id='map'></div>
+
+
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoiYXpkb2xhbiIsImEiOiJjazM4c29rMm0wOXoyM2JsM2NmMng4M25jIn0.O9sq62CU9p_Fh_9t4geqfQ';
       var map = new mapboxgl.Map({
