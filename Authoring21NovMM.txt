@@ -1,0 +1,15 @@
+nav bar - don't use the bootstrap
+
+spoonacular - check if it's working, she was using ajax, which does not work
+
+will do the map instead
+
+look for places in dundee that do zero waste
+find recycling places
+
+the thing to link it to the web app - Adi
+
+progressive web app - to make the text larger or smaller
+
+upcoming events - button or tabs and link to the FB page for more details
+
