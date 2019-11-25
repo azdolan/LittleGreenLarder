@@ -1,13 +1,28 @@
-.headImage{
+.headImage {
   display: block;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-header h1{
+header h1 {
   text-align: center;
 }
 
-.container{
+.container {
   margin-top: 10px;
+}
+
+.navbar-nav.navbar-center {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.carousel-inner img {
+  margin: auto;
+  width: 700px;
+  max-width: 700px;
+  height: 300px;
+  max-height: 300px;
 }
