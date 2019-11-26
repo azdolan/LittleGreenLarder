@@ -25,10 +25,33 @@ header h1 {
   height: auto;
 }
 
-.card-img-left{
+.card-img-left {
   border-bottom-left-radius: calc(.25rem - 1px);
   border-top-left-radius: calc(.25rem - 1px);
   float: left;
   padding-right: 1em;
   margin-bottom: -1.25em;
+}
+
+.videoWrapper {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#navContent{
+  background-color: #8bb174;
+}
+
+#navButton{
+  background-color: #7fb069;
 }
