@@ -48,6 +48,10 @@ header h1 {
   position: absolute;
 }
 
+.card{
+  background-color: #C6ECAE;
+}
+
 #navContent {
   background-color: #8bb174;
 }
