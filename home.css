@@ -56,19 +56,10 @@ header h1 {
   background-color: #7fb069;
 }
 
-body{
-  font-size:100%
+body {
+  font-size: 100%
 }
 
-h1{
-  font-size:6.2em;
-  font-weight: 500;
-}
-
-@media only screen and (max-width: 320px) {
-
-  body {
-    font-size: 2em;
-  }
-
+#eventText {
+  color: #708090;
 }
