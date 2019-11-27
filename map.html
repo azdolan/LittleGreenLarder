@@ -23,33 +23,7 @@
         zoom: 14
       });
 
-      map.addLayer({
-        "id": "points",
-        "type": "symbol",
-        "source": {
-          "type": "geojson",
-          "data": "FeatureCollection",
-          "features": [{
-"type": "Feature", "geometry": {
-"type": "Point",
-"coordinates": [56.456046, -2992001]
-},
-"properties":{
-  "title": "The Little Green Larder",
-  "icon": "college"
-}
-}]
-},
-"layout":{
-  "icon-image": "{icon}-15",
-  "text-field": "{title}",
-  "text-font": ["Roboto Regular"],
-  "text-offset": [0.6, 0.1],
-  "text-anchor": "left",
 
-}
-});
-});
       })
     map.addControl(new mapboxgl.NavigationControl());
     </script>
