@@ -24,9 +24,83 @@
       });
 
 
-      })
-    map.addControl(new mapboxgl.NavigationControl());
-    </script>
+      map.on('load', function() {
+     map.addLayer({
+       "id": "points",
+       "type": "symbol",
+       "source": {
+         "type": "geojson",
+         "data": {
+           "type": "FeatureCollection",
+           "features": [{
+             "type": "Feature",
+             "geometry": {
+               "type": "Point",
+               "coordinates": [-3.020453, 56.461815]
+             },
+             "properties": {
+               "title": "Glass Recyling Point",
+               "icon": "college"
+             }
+           },
+           {
+             "type": "Feature",
+             "geometry": {
+               "type": "Point",
+               "coordinates": [-2.992987, 56.456318]
+             },
+             "properties": {
+               "title": "Frasers Fruit and Veg",
+               "icon": "college"
+             }
+           },
+           {
+             "type": "Feature",
+             "geometry": {
+               "type": "Point",
+               "coordinates": [-2.970805, 56.461827]
+             },
+             "properties": {
+               "title": "Bernado's Charity",
+               "icon": "rocket"
+             }
+           },
+           {
+             "type": "Feature",
+             "geometry": {
+               "type": "Point",
+               "coordinates": [-3.013600, 56.479563]
+             },
+             "properties": {
+               "title": "Wood Recylcing",
+               "icon": "rocket"
+             }
+           },
+           {
+             "type": "Feature",
+             "geometry": {
+               "type": "Point",
+               "coordinates": [-2.991347, 56.456046]
+             },
+             "properties": {
+               "title": "The Little Green Larder",
+               "icon": "triangle"
+             },
+             }]
+         }
+       },
+       "layout": {
+         "icon-image": "{icon}-15",
+         "text-field": "{title}",
+         "text-font": ["Roboto Regular"],
+         "text-offset": [0.6, 0.1],
+         "text-anchor": "left",
+       }
+     });
+   });
+   map.addControl(new mapboxgl.NavigationControl());
+ </script>
 
-  </body>
+</body>
+
 </html>
