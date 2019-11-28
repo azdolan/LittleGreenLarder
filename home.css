@@ -1,13 +1,13 @@
-.headImage {
+.headImage, #banner{
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+  max-width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:auto;
-  margin-top:20px;
 }
 
-header h1 {
-  text-align: center;
+.headImage{
+  margin: 0 auto;
 }
 
 .container {
@@ -21,7 +21,7 @@ header h1 {
   right: 0;
 }
 
-.navbar.navbar-expand-lg{
+.navbar.navbar-expand-lg {
   background-color: #EEEEEE;
 }
 
@@ -54,7 +54,7 @@ header h1 {
   position: absolute;
 }
 
-.card{
+.card {
   background-color: #b5ca8d;
 }
 
@@ -66,21 +66,13 @@ body {
   color: #708090;
 }
 
-#rect{
+#rect {
   width: auto;
-  height: 100px;
-  background: rgba(0,0,0,10);
+  height: auto;
+  background: rgba(0, 0, 0, 10);
 }
 
-#carouselLink{
+#carouselLink {
   text-decoration: none;
   color: #FFFFFF;
-}
-
-#banner{
-  height: auto;
-  justify-content: inherit;
-  align-items: inherit;
-  width: 100%;
-  display: block;
 }
