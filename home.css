@@ -2,6 +2,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width:auto;
+  margin-top:20px;
 }
 
 header h1 {
@@ -9,7 +11,7 @@ header h1 {
 }
 
 .container {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .navbar-nav.navbar-center {
@@ -49,15 +51,7 @@ header h1 {
 }
 
 .card{
-  background-color: #C6ECAE;
-}
-
-#navContent {
-  background-color: #8bb174;
-}
-
-#navButton {
-  background-color: #7fb069;
+  background-color: #b5ca8d;
 }
 
 body {
@@ -66,4 +60,23 @@ body {
 
 #eventText {
   color: #708090;
+}
+
+#rect{
+  width: auto;
+  height: 100px;
+  background: rgba(0,0,0,10);
+}
+
+#carouselLink{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#banner{
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+  width: 100%;
+  display: block;
 }
