@@ -11,7 +11,7 @@ header h1 {
 }
 
 .container {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .navbar-nav.navbar-center {
@@ -19,6 +19,10 @@ header h1 {
   margin-right: auto;
   left: 0;
   right: 0;
+}
+
+.navbar.navbar-expand-lg{
+  background-color: #EEEEEE;
 }
 
 .carousel-inner img {
