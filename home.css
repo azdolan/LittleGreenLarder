@@ -66,10 +66,10 @@ body {
   color: #708090;
 }
 
-#rect {
+#rect, #rect h3, #rect p {
   width: auto;
   height: auto;
-  background: rgba(0, 0, 0, 10);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #carouselLink {
