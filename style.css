@@ -16,5 +16,9 @@ margin: auto
 }
 
 .navbar.navbar-expand-lg, .card {
-  background-color: #EEEEEE;
+  background-color: #605F5E;;
+}
+
+body {
+  background-color: #605F5E;
 }
