@@ -34,3 +34,33 @@ h1 {
   padding-left: 0px;
   text-align: center;
 }
+
+/* Footer styling */
+/* Style for font awesome icons */
+.fa {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 13px;
+  font-size: 15px;
+  width: 5px;
+  text-decoration: none;
+  margin: 5px 25px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Little Green Blogger icon */
+.card-img-footer {
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    height: 45px;
+    line-height: 0px;
+}
