@@ -1,0 +1,66 @@
+/* h1 styling */
+h1 {
+  background-color: lightgreen;
+  color: white;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 340px;
+  display: inline;
+  text-shadow: 3px 2px green;
+}
+
+/* card styling */
+.card-img {
+  float: left;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  justify-content: center;
+  /* css from Cameron, to make it more responsive and remove wasted space */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-body {
+  margin: auto;
+  width: 56%;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+/* Footer styling */
+/* Style for font awesome icons */
+.fa {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 13px;
+  font-size: 15px;
+  width: 5px;
+  text-decoration: none;
+  margin: 5px 25px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Little Green Blogger icon */
+.card-img-footer {
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    height: 45px;
+    line-height: 0px;
+}
