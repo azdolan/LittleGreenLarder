@@ -2,7 +2,7 @@ var CACHE_NAME = 'simple-PWA-localStorage';
 var urlsToCache = [
   './',
   './map.html',
-  './home.html',
+  
   './manifest.json',
   './bootstrap.css'
 ];
