@@ -16,9 +16,13 @@ margin: auto
 }
 
 .navbar.navbar-expand-lg, .card {
-  background-color: #605F5E;;
+  background-color: #605F5E;
 }
 
 body {
   background-color: #605F5E;
+}
+
+.nav.navbar-nav.navbar-centre li a{
+  color: blue;
 }
