@@ -1,6 +1,6 @@
 body {
   font-size: 100%
-  background-color: #605F5E;
+
 
 }
 
@@ -144,4 +144,8 @@ margin: auto
 
 .nav.navbar-nav.navbar-centre li a{
   color: blue;
+}
+
+h5{
+  font-family: 'Proza Libre', sans-serif;
 }
