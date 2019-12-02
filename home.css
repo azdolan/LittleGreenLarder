@@ -53,6 +53,10 @@ body {
   color: #FFFFFF;
 }
 
+#aboutText{
+  font-size: 25px;
+}
+
 /*Sets position, size and other attributes of video.*/
 .videoWrapper {
   overflow: hidden;
@@ -81,4 +85,34 @@ body {
   height: 200px;
   object-fit: cover;
   overflow: hidden;
+}
+
+/* Footer styling */
+/* Style for font awesome icons */
+.fa {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 13px;
+  font-size: 15px;
+  width: 5px;
+  text-decoration: none;
+  margin: 5px 25px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Little Green Blogger icon */
+.card-img-footer {
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    height: 45px;
+    line-height: 0px;
 }
