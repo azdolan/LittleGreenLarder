@@ -1,9 +1,32 @@
+/*Resizes selected images when screen size changes.*/
+.headImage, #banner{
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+  max-width: 100%;
+  display: block;
+}
+
+.headImage{
+  margin: 0 auto;
+}
+
+/*Separates each section by 50px at the top.*/
+.container {
+  margin-top: 50px;
+}
+
 /*Centers navbar.*/
 .navbar-nav.navbar-center {
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+}
+
+/*Sets background colour for navbar and cards to a light-ish grey.*/
+.navbar.navbar-expand-lg, .card {
+  background-color: #EEEEEE;
 }
 
 /* h1 styling */
