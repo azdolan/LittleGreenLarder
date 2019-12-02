@@ -1,5 +1,7 @@
 body {
   font-size: 100%
+  background-color: #605F5E;
+
 }
 
 /*Resizes selected images when screen size changes.*/
@@ -138,9 +140,7 @@ margin: auto
   background-color: #605F5E;
 }
 
-body {
-  background-color: #605F5E;
-}
+
 
 .nav.navbar-nav.navbar-centre li a{
   color: blue;
