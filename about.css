@@ -24,8 +24,8 @@
   right: 0;
 }
 
-/*Sets background colour for navbar and cards to a light-ish grey.*/
-.navbar.navbar-expand-lg, .card {
+/*Sets background colour for navbar to a light-ish grey.*/
+.navbar.navbar-expand-lg {
   background-color: #EEEEEE;
 }
 
@@ -42,10 +42,21 @@ h1 {
 }
 
 /* Card styling */
+.card-title{
+  background-color: lightgreen;
+  color: white;
+  padding-top: 3px;
+  padding-right: 0px;
+  padding-bottom: 3px;
+  padding-left: 0px;
+  text-shadow: 2px 1px green;
+  width: 100%;
+}
+
 .card-img {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -56,11 +67,10 @@ h1 {
   overflow: hidden;
 }
 
-
 .card-img-pd {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -74,7 +84,7 @@ h1 {
 .card-img-pd2 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -88,7 +98,7 @@ h1 {
 .card-img-pd3 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -102,7 +112,7 @@ h1 {
 .card-img-pd4 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -116,7 +126,7 @@ h1 {
 .card-img-pd5 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -130,7 +140,7 @@ h1 {
 .card-img-pd6 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -149,6 +159,11 @@ h1 {
   padding-bottom: 10px;
   padding-left: 0px;
   text-align: center;
+}
+
+/* List border colour */
+.list-group-item {
+  border-color: white;
 }
 
 /* Footer styling */
