@@ -1,3 +1,9 @@
+#map{
+height: 400px;
+width: 960px;
+margin: auto
+}
+
 body{
   background-color: #595E5F
 }
