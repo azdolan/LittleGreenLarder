@@ -1,5 +1,5 @@
 /*Resizes selected images when screen size changes.*/
-.headImage, #banner{
+.headImage, #banner {
   height: auto;
   justify-content: inherit;
   align-items: inherit;
@@ -7,7 +7,7 @@
   display: block;
 }
 
-.headImage{
+.headImage {
   margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@
 
 /*Sets background colour for navbar to a light-ish grey.*/
 .navbar.navbar-expand-lg {
-  background-color: #EEEEEE;
+  background-color: lightgreen;
 }
 
 /* h1 styling */
@@ -41,8 +41,12 @@ h1 {
   text-shadow: 3px 2px green;
 }
 
+.header {
+  margin-top: 10px;
+}
+
 /* Card styling */
-.card-title{
+.card-title {
   background-color: lightgreen;
   color: white;
   padding-top: 3px;
@@ -189,18 +193,26 @@ h1 {
 
 /* Little Green Blogger icon */
 .card-img-footer {
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-    height: 45px;
-    line-height: 0px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  height: 45px;
+  line-height: 0px;
 }
 
 /* Video Styling */
-.video, p {
-   margin: 0 auto;
-   width: 56%;
-   padding-top: 10px;
-   padding-bottom: 10px;
-    }
+.video {
+  margin: 0 auto;
+  width: 56%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  margin: auto;
+  width: 56%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
 }
