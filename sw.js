@@ -5,6 +5,7 @@ var urlsToCache = [
   './blog.html',
   './articles.html'
   './manifest.json',
+  './about.html',
   './bootstrap.css'
 ];
 
