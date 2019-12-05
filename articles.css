@@ -1,3 +1,7 @@
+body{
+  background-color: #595E5F
+}
+
 /*Resizes selected images when screen size changes.*/
 .headImage, #banner{
   height: auto;
