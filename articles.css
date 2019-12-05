@@ -26,7 +26,7 @@
 
 /*Sets background colour for navbar to a light-ish grey.*/
 .navbar.navbar-expand-lg {
-  background-color: #EEEEEE;
+  background-color: lightgreen;
 }
 
 /* h1 styling */
@@ -39,6 +39,10 @@ h1 {
   padding-left: 340px;
   display: inline;
   text-shadow: 3px 2px green;
+}
+
+.header {
+  margin-top: 10px;
 }
 
 /* card styling */
