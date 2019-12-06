@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:400,700&display=swap" rel="stylesheet">
 
-<!-- javascript for the ServiceWorker so the PWA would work-->
-
-      <script>
+  <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -20,21 +24,16 @@
     }
   </script>
 
-  <link rel="manifest" href="manifest.json">
-  <title>Home</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="home.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!--Shop logo at top of screen-->
+  <!--Shop logo at top of screen-->
   <div class="container">
     <a href="home.html"><img src="banners_carousel/logo.jpg" alt="logo" class="headImage"></a>
   </div>
 
-<!--Navbar-->
+  <!--Navbar-->
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light" id="navContent">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navButton">
@@ -47,13 +46,13 @@
             <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="map.html">Map</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="zeroWasteLifestyle.html">Zero-Waste Lifestyle</a>
-           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="zeroWasteLifestyle.html">Zero-Waste Lifestyle</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="articles.html">Articles</a>
@@ -67,27 +66,27 @@
   </div>
 
 
-<!--Carousel with three images/links-->
+  <!--Carousel with three images/links-->
   <div id="carousel" class="carousel slide container" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="#" id="carouselLink">
-          <img src="banners_carousel/cookingCarousel.jpg" class="d-block w-100" alt="recipeSlide">
+        <a href="map.html" id="carouselLink">
+          <img src="banners_carousel/cookingCarousel.jpg" class="d-block w-100" alt="mapSlide">
           <div class="carousel-caption">
             <div id="rect">
-              <h3>Eat Healthier</h3>
-              <p>Check out these awesome recipes for you to cook up!</p>
+              <h3>Where Are We?</h3>
+              <p>Find us with our built in map!</p>
             </div>
           </div>
         </a>
       </div>
       <div class="carousel-item">
-        <a href="#" id="carouselLink">
-          <img src="..." class="d-block w-100" alt="zeroWasteSlide">
+        <a href="zeroWasteLifestyle.html" id="carouselLink">
+          <img src="banners_carousel/recyclingCarousel.jpg" class="d-block w-100" alt="zeroWasteSlide">
           <div class="carousel-caption">
             <div id="rect">
               <h3>Lower Your Waste</h3>
-              <p>Help the enviroment with these useful tips and tricks!</p>
+              <p>Help the environment with these useful tips and tricks!</p>
             </div>
           </div>
       </div>
@@ -96,7 +95,7 @@
           <img src="banners_carousel/blogCarousel.jpg" class="d-block w-100" alt="blogSlide">
           <div class="carousel-caption">
             <div id="rect">
-              <h3>More Over At The Blog</h3>
+              <h3>More At The Blog</h3>
               <p>Keep up to date with us over at our blog!</p>
             </div>
           </div>
@@ -112,7 +111,7 @@
     </a>
   </div>
 
-<!--Embed Youtube video for 'How to Shop'-->
+  <!--Embed Youtube video for 'How to Shop'-->
   <div class="container">
     <img src="banners_carousel/bannerShopAlt.jpg" alt="banner1" id="banner">
     <div class="videoWrapper">
@@ -122,7 +121,7 @@
     </div>
   </div>
 
-<!--Cards for events-->
+  <!--Cards for events-->
   <div class="container">
     <img src="banners_carousel/bannerEventsAlt.jpg" alt="banner2" id="banner">
     <div class="card-body">
@@ -162,13 +161,27 @@
     </div>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <!-- Footer Elements -->
+    <div class="footer" style="background-color: lightgreen;">
+      <p class="text-center text-black pt-1 pb-0"><a href="https://www.facebook.com/thelittlegreenlarder/" class="fa fa-facebook"></a>
+        <a href="https://thelittlegreenblogger.com/" class="card-img-footer"><img
+            src="https://lh3.googleusercontent.com/3t_6pDT09DEfiUYeBgxRnr9MI7K002suxhXBoFwVR2kk_4DwrxgjorbJzaZ2M5wvVKui2cHaZVlK_JByP__wJZG_45_4HF6Aqq53QUer9uaaMFc56LJFawi2ll__Y6WCSU9azc0WfA=w2400" class="card-img-footer"
+            alt="The Little Green Blogger"></a></p>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center pt-0 pb-2">© 2019 Copyright The Little Green Larder
+      </div>
+    </div>
+    <!-- Copyright -->
+    <!-- Footer Elements -->
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-
+      
 </body>
 
 </html>

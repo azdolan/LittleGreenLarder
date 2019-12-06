@@ -6,6 +6,7 @@ var urlsToCache = [
   './articles.html'
   './manifest.json',
   './about.html',
+  './zeroWasteLifestyle.html',
   './bootstrap.css'
 ];
 

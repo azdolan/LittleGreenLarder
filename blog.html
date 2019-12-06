@@ -1,43 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-
-<center><h1>The Little Green Blogger</h1></center>
-<center><h3>Living a sustainable life</h2></center>
 
 <head>
 
   <meta charset="utf-8">
 
-
   <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-</script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
 
 <link rel="manifest" href="manifest.json">
   <title>Blog</title>
-
+  <link rel="stylesheet" href="manifest.json">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="blog.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-  <!--  Blog Cards -->
 
-  <!-- Little Green Blogger Cards -->
+  <!--Shop logo at top of screen-->
+  <div class="container">
+    <a href="home.html"><img src="banners_carousel/logo.jpg" alt="logo" class="headImage"></a>
+  </div>
 
+  <!--Navbar-->
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light" id="navContent">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navButton">
@@ -50,15 +50,17 @@ if ('serviceWorker' in navigator) {
             <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="zeroWasteLifestyle.html">Zero-Waste Lifestyle</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="articles.html">Articles</a>
           </li>
-          <li class="nav-item">
-             <a class="nav-link" href="zeroWasteLifestyle.html">Zero-Waste Lifestyle</a>
-           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="blog.html">Blog</a>
           </li>
@@ -66,11 +68,15 @@ if ('serviceWorker' in navigator) {
       </div>
     </nav>
   </div>
+
+  <!--  Blog Cards -->
+  <!-- Little Green Blogger Cards -->
+
   <div class="card-body">
     <div class="card border-success mb-3" style="max-width: 850px;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD7350-1024x683.jpg" class="card-img" alt="Craft Activities">
+          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD7350-1024x683.jpg" class="card-img-a" alt="Craft Activities">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -83,15 +89,13 @@ if ('serviceWorker' in navigator) {
     </div>
   </div>
 
-
     <!--  Gift Guide Cards -->
-
-  <h1>Category: Little Green Larder</h1>
+  <h1>The Little Green Blogger</h1>
   <div class="card-body">
     <div class="card border-success mb-3" style="max-width: 850px;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/11/whitegift-box-lot-744969-1-2048x1409.jpg" class="card-img" alt="The Little Green Larder Shop">
+          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/11/whitegift-box-lot-744969-1-2048x1409.jpg" class="card-img-a" alt="The Little Green Larder Shop">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -110,7 +114,7 @@ if ('serviceWorker' in navigator) {
     <div class="card border-success mb-3" style="max-width: 850px;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/11/christmas-518587_1920.jpg" class="card-img" alt="The Little Green Larder Shop">
+          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/11/christmas-518587_1920.jpg" class="card-img-a" alt="The Little Green Larder Shop">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -129,13 +133,12 @@ if ('serviceWorker' in navigator) {
     <div class="card border-success mb-3" style="max-width: 850px;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/10/stockings-3029266_1920-1.jpg" class="card-img" alt="The Little Green Larder Shop">
+          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/10/stockings-3029266_1920-1.jpg" class="card-img-a" alt="The Little Green Larder Shop">
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">Sustainable Stocking Fillers For Adults That Won't Break The Bank</h5>
-            <p class="card-text">Christmas stocking fillers for adults that are eco friendly and affordable.</p>
-              </small></p>
+            <p> class="card-text">Christmas stocking fillers for adults that are eco friendly and affordable.</p>
             <a href="https://thelittlegreenblogger.com/index.php/2019/10/25/sustainable-stocking-fillers-for-adults-that-wont-break-the-bank/" class="btn btn-success">Read More</a>
           </div>
         </div>
@@ -149,13 +152,12 @@ if ('serviceWorker' in navigator) {
     <div class="card border-success mb-3" style="max-width: 850px;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/10/recycle-310938_1280-1.png" class="card-img" alt="Fish in a glove">
+          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/10/recycle-310938_1280-1.png" class="card-img-a" alt="Fish in a glove">
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">How to Live A Greener Life In An Apartment</h5>
-            <p class="card-text">Zero waste in an Apartment</p>
-              </small></p>
+            <p> class="card-text">Zero waste in an Apartment</p>
             <a href="https://thelittlegreenblogger.com/index.php/2019/10/19/how-to-live-a-greener-life-in-an-apartment/" class="btn btn-success">Read More</a>
           </div>
         </div>
@@ -169,7 +171,7 @@ if ('serviceWorker' in navigator) {
     <div class="card border-success mb-3" style="max-width: 850px;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD7333-1024x683.jpg" class="card-img" alt="Craft Activities">
+          <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD7333-1024x683.jpg" class="card-img-a" alt="Craft Activities">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -188,7 +190,7 @@ if ('serviceWorker' in navigator) {
       <div class="card border-success mb-3" style="max-width: 850px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD4827.jpg" class="card-img" alt="Craft Activities">
+            <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD4827.jpg" class="card-img-a" alt="Craft Activities">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -207,7 +209,7 @@ if ('serviceWorker' in navigator) {
       <div class="card border-success mb-3" style="max-width: 850px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD9088-1-1024x683.jpg" class="card-img" alt="Craft Activities">
+            <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD9088-1-1024x683.jpg" class="card-img-a" alt="Craft Activities">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -226,7 +228,7 @@ if ('serviceWorker' in navigator) {
       <div class="card border-success mb-3" style="max-width: 850px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD4861-1-1024x683.jpg" class="card-img" alt="Craft Activities">
+            <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/SIOD4861-1-1024x683.jpg" class="card-img-a" alt="Craft Activities">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -245,7 +247,7 @@ if ('serviceWorker' in navigator) {
       <div class="card border-success mb-3" style="max-width: 850px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/69610570_226946358258169_4879352602266959872_n.jpg" class="card-img" alt="Craft Activities">
+            <img src="https://thelittlegreenblogger.com/wp-content/uploads/2019/09/69610570_226946358258169_4879352602266959872_n.jpg" class="card-img-a" alt="Craft Activities">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -258,12 +260,28 @@ if ('serviceWorker' in navigator) {
       </div>
     </div>
 
-<!-- Javascrip to make hamburger menu work -->
+    <!-- Footer -->
+    <footer>
+      <!-- Footer Elements -->
+      <div class="footer" style="background-color: lightgreen;">
+        <p class="text-center text-black pt-1 pb-0"><a href="https://www.facebook.com/thelittlegreenlarder/" class="fa fa-facebook"></a>
+          <a href="https://thelittlegreenblogger.com/" class="card-img-footer"><img
+              src="https://lh3.googleusercontent.com/3t_6pDT09DEfiUYeBgxRnr9MI7K002suxhXBoFwVR2kk_4DwrxgjorbJzaZ2M5wvVKui2cHaZVlK_JByP__wJZG_45_4HF6Aqq53QUer9uaaMFc56LJFawi2ll__Y6WCSU9azc0WfA=w2400" class="card-img-footer"
+              alt="The Little Green Blogger"></a></p>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center pt-0 pb-2">The Little Green Larder © 2019 Copyright
+        </div>
+      </div>
+      <!-- Copyright -->
+      <!-- Footer Elements -->
+    </footer>
+    <!-- Footer -->
+
+<!-- Javascript to make hamburger menu work -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:400,700&display=swap" rel="stylesheet">
 
   </body>
 

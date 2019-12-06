@@ -1,0 +1,133 @@
+
+p{
+  font-family: 'Proza Libre', sans-serif;
+}
+
+/*Resizes selected images when screen size changes.*/
+.headImage, #banner{
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+  max-width: 100%;
+  display: block;
+}
+
+.headImage{
+  margin: 0 auto;
+}
+
+/*Separates each section by 50px at the top.*/
+.container {
+  margin-top: 50px;
+}
+
+/*Centers navbar.*/
+.navbar-nav.navbar-center {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+/*Sets background colour for navbar to a lightgreen.*/
+.navbar.navbar-expand-lg {
+  background-color: lightgreen;
+}
+
+/* h1 styling */
+h1 {
+  background-color: lightgreen;
+  color: white;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 340px;
+  display: inline;
+  text-shadow: 3px 2px green;
+}
+
+.header {
+  margin-top: 10px;
+}
+
+/* card styling */
+.card-img {
+  padding-top: 8px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  justify-content: center;
+  /* css from Cameron, to make it more responsive and remove wasted space */
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-img-a {
+  float: left;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  justify-content: center;
+  /* css from Cameron, to make it more responsive and remove wasted space */
+  width: 100%;
+  height: 50%%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-img-b {
+  float: left;
+  padding-top: 18px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  justify-content: center;
+  /* css from Cameron, to make it more responsive and remove wasted space */
+  width: 100%;
+  height: 50%%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card-body {
+  margin: auto;
+  width: 56%;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+/* Footer styling */
+/* Style for font awesome icons */
+.fa {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 13px;
+  font-size: 15px;
+  width: 5px;
+  text-decoration: none;
+  margin: 5px 25px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Little Green Blogger icon */
+.card-img-footer {
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    height: 45px;
+    line-height: 0px;
+}
