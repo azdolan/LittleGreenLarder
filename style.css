@@ -1,12 +1,11 @@
 body{
-    background-color: #595E5F
+    background-color: white
 }
 
 body {
   font-size: 100%
 
 }
-
 
 /*Resizes selected images when screen size changes.*/
 .headImage, #banner{
@@ -34,9 +33,9 @@ body {
   right: 0;
 }
 
-/*Sets background colour for navbar and cards to a light-ish grey.*/
-.navbar.navbar-expand-lg, .card {
-  background-color: #EEEEEE;
+/*Sets background colour for navbar to a lightgreen.*/
+.navbar.navbar-expand-lg {
+  background-color: lightgreen;
 }
 
 /*Aligns carousel in center.*/
@@ -137,4 +136,4 @@ h5{
 p{
   font-family: 'Proza Libre', sans-serif;
 }
-}
+
