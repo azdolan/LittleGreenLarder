@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Head - which includes title of page and links to stylesheets/ icon library-->
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Javascript for service worker-->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+  
+  <title>Zero Waste Lifestyle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type=text/css href="zeroWasteStyle.css">
+</head>
+
+<body>
+  <header>
+    <!--Shop logo at top of screen-->
+    <div class="container">
+      <a href="home.html"><img src="logo.jpg" alt="logo" class="headImage"></a>
+    </div>
+    <!--Navbar-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light" id="navContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navButton">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zeroWasteLifestyle.html">Zero-Waste Lifestyle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="articles.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Container to store all of the information about leading a zero waste lifestyle-->
+  <div class="container">
+    <main>
+      <h2>Zero Waste Lifestyle</h2>
+      <p>This article will describe ways in which you can better lead a zero waste lifestyle, and reduce your negative impact on the environment.</p>
+      <br>
+      <h3>Minimise Plastic Use</h3>
+      <p>One of the many ways in which you can reduce your waste is by using less plastic. Plastic is harmful since it is non-biodegradable, so it cannot decompsose. This means that when it is left on land it is making soil less fertile, and is
+        harming
+        sealife since the bacteria in their stomachs cannot break the plastic up into smaller pieces.</p>
+      <p>There are many alternatives to plastic which are recyclable:</p>
+      <ul>
+        <li>Bamboo toothbrushes can be brought instead of plastic ones.</li>
+        <li>Instead of buying bottles of shower sopas, you could buy bars of soap instead.</li>
+        <li>Women could buy organic cotton plastic free tampons.</li>
+        <li>Instead of using plastic bottles or plastic disposable cups, you could use metal or glass bottles for water and coffee.</li>
+      </ul>
+      <p>Also try and buy "loose" fruit and veg instead of ones that are wrapped in plastic.</p>
+
+      <h3>Reuse and recycle as much as possible!</h3>
+      <p>Another way of reducing your amount of waste is by reusing things as much as possible.</p>
+      <p>There are many ways of doing this: </p>
+      <ul>
+        <li>You could use reusable cups/flasks.</li>
+        <li>Make lunch at home every day instead of buying food out.</li>
+        <li>Use a bag for life to do the shopping, instead of getting new carrier bags every time.</li>
+        <li>Revive food scraps as much as possible, and turn them into jams and sauces.</li>
+      </ul>
+      <p>Oil can also be recycled. Pouring cooking oil down the drain clogs it, so it is better to try and donate it to be recycled into biodiesel fuel.</p>
+
+      <h3>Purchases</h3>
+      <p>Many people make unnecessary purchases without thinking about the consequences of the waste. The waste is not just about the landfill, its about the physical representation of misallocated resourches - which could have been better used
+        elsewhere.</p>
+      <p>When we make purchases if we ensure that we actually fully need it before we buy it, there is more likely to be less going to waste. Doing things such as buying used products is a lot better, since it means that the original product is not
+        going to waste.</p>
+  </div>
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+    <!-- Footer Elements -->
+    <div class="footer" style="background-color: lightgreen;">
+      <p class="text-center text-black pt-1 pb-0"><a href="https://www.facebook.com/thelittlegreenlarder/" class="fa fa-facebook"></a>
+        <a href="https://thelittlegreenblogger.com/" class="card-img-footer"><img
+            src="https://lh3.googleusercontent.com/3t_6pDT09DEfiUYeBgxRnr9MI7K002suxhXBoFwVR2kk_4DwrxgjorbJzaZ2M5wvVKui2cHaZVlK_JByP__wJZG_45_4HF6Aqq53QUer9uaaMFc56LJFawi2ll__Y6WCSU9azc0WfA=w2400" class="card-img-footer"
+            alt="The Little Green Blogger"></a></p>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center pt-0 pb-2">The Little Green Larder © 2019 Copyright
+      </div>
+    </div>
+    <!-- Copyright -->
+    <!-- Footer Elements -->
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
