@@ -4,7 +4,7 @@ p{
 }
 
 /*Resizes selected images when screen size changes.*/
-.headImage, #banner{
+.headImage, #banner {
   height: auto;
   justify-content: inherit;
   align-items: inherit;
@@ -12,7 +12,7 @@ p{
   display: block;
 }
 
-.headImage{
+.headImage {
   margin: 0 auto;
 }
 
@@ -29,9 +29,9 @@ p{
   right: 0;
 }
 
-/*Sets background colour for navbar and cards to a light-ish grey.*/
-.navbar.navbar-expand-lg, .card {
-  background-color: #EEEEEE;
+/*Sets background colour for navbar to a light-ish grey.*/
+.navbar.navbar-expand-lg {
+  background-color: lightgreen;
 }
 
 /* h1 styling */
@@ -46,11 +46,26 @@ h1 {
   text-shadow: 3px 2px green;
 }
 
+.header {
+  margin-top: 10px;
+}
+
 /* Card styling */
+.card-title {
+  background-color: lightgreen;
+  color: white;
+  padding-top: 3px;
+  padding-right: 0px;
+  padding-bottom: 3px;
+  padding-left: 0px;
+  text-shadow: 2px 1px green;
+  width: 100%;
+}
+
 .card-img {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -61,11 +76,10 @@ h1 {
   overflow: hidden;
 }
 
-
 .card-img-pd {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -79,7 +93,7 @@ h1 {
 .card-img-pd2 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -93,7 +107,7 @@ h1 {
 .card-img-pd3 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -107,7 +121,7 @@ h1 {
 .card-img-pd4 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -121,7 +135,7 @@ h1 {
 .card-img-pd5 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -135,7 +149,7 @@ h1 {
 .card-img-pd6 {
   float: left;
   padding-top: 5px;
-  padding-right: 5px;
+  padding-right: 0px;
   padding-bottom: 5px;
   padding-left: 5px;
   justify-content: center;
@@ -154,6 +168,11 @@ h1 {
   padding-bottom: 10px;
   padding-left: 0px;
   text-align: center;
+}
+
+/* List border colour */
+.list-group-item {
+  border-color: white;
 }
 
 /* Footer styling */
@@ -179,18 +198,25 @@ h1 {
 
 /* Little Green Blogger icon */
 .card-img-footer {
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-    height: 45px;
-    line-height: 0px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  height: 45px;
+  line-height: 0px;
 }
 
 /* Video Styling */
-.video, p {
-   margin: 0 auto;
-   width: 56%;
-   padding-top: 10px;
-   padding-bottom: 10px;
-    }
+.video {
+  margin: 0 auto;
+  width: 56%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  margin: auto;
+  width: 56%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: justify;
 }
