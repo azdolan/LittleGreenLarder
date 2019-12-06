@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Javascript for service worker-->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Map</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="map.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1> Map</h1>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navContent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navButton">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">            
+            <a class="nav-link" href="map.html">Map<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="zeroWasteLifestyle.html">Zero-Waste Lifestyle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id='map'></div>
+
+  <!-- Javascript for Map API -->
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXpkb2xhbiIsImEiOiJjazM4c29rMm0wOXoyM2JsM2NmMng4M25jIn0.O9sq62CU9p_Fh_9t4geqfQ';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v9',
+      center: [-2.982, 56.458],
+      zoom: 14
+    });
+
+    map.on('load', function() {
+      map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+          "type": "geojson",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-2.991433, 56.456034]
+                },
+                "properties": {
+                  "title": "The Little Green Larder",
+                  "icon": "shop",
+                  "description": "A shop that promotes zero green waste. Get all kinds of items with zero plastic waste. Opening times vary"
+                }
+              },
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-2.971101, 56.463138]
+                },
+                "properties": {
+                  "title": "Computer Recylcing Services LTD",
+                  "icon": "trianlge",
+                  "description": "A place to recycle computers. Opening Times: Mon-Thurs- 9am-5pm, Fri- 9am-4:30pm"
+                }
+              },
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-2.9992987, 56.456318]
+                },
+                "properties": {
+                  "title": "Frasers Fruit and Veg",
+                  "icon": "shop",
+                  "description": "A shop to get loose fruit and veg and support local farmers. Opening Times: Mon-Sat 10am-6pm, Sun 9am-5pm"
+                }
+              },
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-3.020453, 56.461815]
+                },
+                "properties": {
+                  "title": "Glass Recylcing Point",
+                  "icon": "triangle",
+                  "description": "A place to recylce glass"
+                }
+              },
+              {
+                "type": "Feature",
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [-2.970805, 56.461827]
+                },
+                "properties": {
+                  "title": "Bernardo's Charity",
+                  "icon": "triangle",
+                  "description": "A palce to donate old clothes to charity. Opening Times Mon-Sat 9am-5pm, Sun 12pm-5pm"
+                }
+              }
+            ]
+          }
+        },
+        "layout": {
+          "icon-image": "{icon}-15",
+          "text-field": "{title}",
+          "text-font": ["Roboto Regular"],
+          "text-offset": [0.6, 0.1],
+          "text-anchor": "left",
+        }
+      });
+      map.on('click', 'points', function(e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+      map.on('mouseenter', 'points', function() {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', 'points', function() {
+        map.getCanvas().style.cursor = '';
+      });
+    });
+    map.addControl(new mapboxgl.NavigationControl());
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
