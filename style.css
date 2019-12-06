@@ -1,3 +1,7 @@
+body{
+    background-color: #595E5F
+}
+
 body {
   font-size: 100%
 
@@ -128,6 +132,7 @@ body {
 h5{
   font-family: 'Proza Libre', sans-serif;
 }
+
 
 p{
   font-family: 'Proza Libre', sans-serif;
