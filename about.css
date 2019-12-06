@@ -1,3 +1,8 @@
+
+p{
+  font-family: 'Proza Libre', sans-serif;
+}
+
 /*Resizes selected images when screen size changes.*/
 .headImage, #banner {
   height: auto;
